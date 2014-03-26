@@ -1,0 +1,9 @@
+#!sh
+SHELL=sh
+export $SHELL
+for DIR in src tracer console pvmgs hoster examples gexamples libfpvm rm
+do
+cd ${DIR}/os2
+make $1
+cd ../..
+done
